@@ -1,0 +1,40 @@
+:root {
+  --primary: #153956;
+  --primary-dark: rgb(0, 46, 77);
+  --secondary: #f2a278;
+  --secondary-dark: #f07b61;
+  --word: #f5f2e8;
+  --word-dark: #101314;
+
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%
+}
+
+::-webkit-scrollbar {
+  width: 8px; /* "auto" or "thin" */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2a278; /* color of the scroll thumb */
+  border-radius: 60px; /* roundness of the scroll thumb */
+}
+
+/* Chrome, Safari, Edge, Opera
+  Input add and minus arrows
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox
+  Input add and minus arrows
+*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
