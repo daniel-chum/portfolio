@@ -1,0 +1,20 @@
+.catch1 {
+    animation: show 1s ease-in 0s 1 normal;
+}
+
+.catch2 {
+    animation: show 2.5s ease-in 0s 1 normal;
+}
+
+.catch3 {
+    animation: show 3.6s ease-in 0s 1 normal;
+}
+
+@keyframes show {
+    0%, 50% {
+        opacity: 0;
+     }
+    100% {
+        opacity: 1;
+     }
+}

@@ -13,8 +13,8 @@ const Skills = (props) => {
     ]
 
   return (
-    <section className='w-9/12 xl:w-7/12 pt-20 pb-40 mx-auto'>
-      <h1 className='pb-8 text-secondary-dark text-3xl text-center font-bold tracking-tight'>
+    <section className='w-9/12 xl:w-7/12 pt-28 pb-60 mx-auto'>
+      <h1 className='pb-12 text-secondary-dark text-3xl text-center font-bold tracking-tight'>
         Technologies I've used
       </h1>
       <div className="bg-word rounded-xl border border-gray-200 shadow-md">

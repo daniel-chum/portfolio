@@ -3,7 +3,7 @@ import Link from 'next/link'
 const LinkButton = ({title, href}) => {
   return (
     <a
-      className='block px-10 py-3 bg-word rounded-xl text-secondary text-xl font-bold focus:outline-none'
+      className='w-32 px-10 py-3 bg-word rounded-xl text-secondary text-xl font-bold focus:outline-none'
       href= {href}
       target="_blank"
     >
@@ -16,14 +16,14 @@ const Post = ({post}) => {
   const { title, description, image, live, repo, reverse } = post
   const flexReverse = reverse ? 'flex-row-reverse' : 'flex-row'
   return (
-    <div className={`flex flex-col lg:${flexReverse} justify-evenly pt-16`}>
-      <img className='border lg:w-5/12' src={image} />
-      <div className='lg:w-1/2 pl-4 pt-2'>
+    <div className={`flex flex-col lg:${flexReverse} justify-evenly py-10`}>
+      <img className='bg-secondary border lg:w-5/12 opacity-70' src={image} />
+      <div className='lg:w-1/2 pl-4 pt-4 lg:pt-0 flex flex-col justify-center'>
         <h1 className='text-primary-dark text-center lg:text-left text-3xl font-bold tracking-tighter'>{title}</h1>
         <p className='text-primary pt-4'>
           {description}
         </p>
-        <div className='flex flex-col lg:flex-row pt-3 gap-x-2 gap-y-2'>
+        <div className='flex justify-center lg:justify-start flex-row pt-6 lg:pt-2 gap-x-2 gap-y-2'>
           {live && <LinkButton href={live} title='LIVE' />}
           {repo && <LinkButton href={repo} title='REPO' />}
         </div>
@@ -58,7 +58,7 @@ const Projects = (props) => {
 
   return (
     <section className='w-11/12 xl:w-7/12 pt-32 mx-auto font-open-sans text-work-dark'>
-      <h1 className='text-secondary-dark text-3xl text-center font-bold tracking-tight'>
+      <h1 className='pb-10 text-secondary-dark text-3xl text-center font-bold tracking-tight'>
         Projects I Worked On
       </h1>
       {POST.map((post, index) => (

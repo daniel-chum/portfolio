@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import LandingPage from "../components/LandingPage";
+import LandingPage from "../components/Landing/LandingPage";
 import Introduction from "../components/Introduction";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
